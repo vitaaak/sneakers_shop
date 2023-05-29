@@ -1,0 +1,26 @@
+@font-face {
+  font-family: HelveticaMedium;
+  font-display: swap;
+  src: url("../fonts/HelveticaMedium.woff2") format("woff2"), url("../fonts/HelveticaMedium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HelveticaBold;
+  font-display: swap;
+  src: url("../fonts/HelveticaBold.woff2") format("woff2"), url("../fonts/HelveticaBold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HelveticaThin;
+  font-display: swap;
+  src: url("../fonts/HelveticaThin.woff2") format("woff2"), url("../fonts/HelveticaThin.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.wr {
+  font-family: "HelveticaMedium";
+}
+
+/*# sourceMappingURL=style.css.map */

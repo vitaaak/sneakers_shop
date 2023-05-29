@@ -1,0 +1,57 @@
+.sneakersBlock .sneakersBlock-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+  .sneakersBlock-cart{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-family: $FontThin;
+    font-weight: 600;
+    width: 21.7%;
+    margin: 1% 2% 1% 0;
+    &_image{
+      width: 70%;
+      height: 50%;
+      img{
+        width: 100%;
+      }
+    }
+
+
+    &_title{
+      @include title;
+      cursor: default;
+    }
+
+    &_selector {
+      width: 100%;
+      @include selector;
+    }
+    &_bottom{
+      display: flex;
+      align-items: center;
+      margin-top: 5%;
+
+      &_price{
+        @include title;
+        font-family: $FontBold; 
+        cursor: default;
+      }
+      
+
+      &_btn{
+        @include btnCart;
+        //svg{
+        //  margin-right: 7px;
+        //}
+      }
+    }
+   
+  }
+    
+  
+}

@@ -1,0 +1,15 @@
+.productDescr .productDescr-container{
+  display: flex;
+  flex-direction: column;
+  justify-content:left;
+  .productDescr_title{
+    @include text;
+    margin-bottom: 0.5em;
+  }
+  .productDescr_subname{
+    @include text;
+    color: $colorRemoveBtn;
+    width: 60%;
+    margin-bottom: 0.5em;
+  }
+}

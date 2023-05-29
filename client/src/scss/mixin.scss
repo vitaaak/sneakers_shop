@@ -1,0 +1,71 @@
+@mixin btnOpacity {
+  padding: 10px 15px;
+  border: 2px $white solid;
+  border-radius: 30px;
+
+  &.active{
+    border: 2px $black solid;
+  }
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  &:hover, :active {
+    border: 2px $black solid;
+  }
+
+}
+
+@mixin btnCart {
+  background-color: $black;
+  color: $white;
+  padding: 11px 32px;
+  border-radius: 30px;
+  margin-left: 1em;
+  cursor: pointer;
+
+    &:hover, :focus{
+      box-shadow: 0 0 6px 3px gray;
+    }
+  &:active{
+    padding: 10px 31px;
+    margin: 2px 0 0 15px;
+  }
+}
+
+@mixin title {
+  font-family: $FontThin;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+}
+
+@mixin text {
+  font-family: $FontThin;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@mixin selector {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid $black;
+  border-radius: 30px;
+  padding: 4% 3%;
+  ul{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    li{
+      @include btnOpacity;
+      margin: 1px;
+      cursor: pointer;
+    }
+
+  }
+}

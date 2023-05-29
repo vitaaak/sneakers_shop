@@ -1,0 +1,35 @@
+ .emptyCart-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 5%;
+
+   .emptyCart-title {
+     display: flex;
+     font-family: $FontMedium;
+     font-size: 32px;
+     line-height: 39px;
+     font-weight: 700;
+     margin-top: 5%;
+
+     &_smile {
+       display: flex;
+       align-items: center;
+       margin-left: 5px;
+     }
+   }
+
+   .emptyCart-descr {
+     @include text;
+     text-align: center;
+     margin: 1% 0 3%;
+     color: $colorRemoveBtn;
+   }
+
+   a {
+     text-decoration: none;
+   }
+
+
+ }

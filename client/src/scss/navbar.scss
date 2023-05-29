@@ -1,0 +1,80 @@
+.navbar .container{
+  width: 100%;
+  background-color: $backColor;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5% 0;
+  position: relative;
+
+  .navbar-logo{
+    margin-left: 3em;
+    cursor: pointer;
+  }
+
+  .navbar-information{
+    display: flex;
+    font-family: $FontThin;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    &_number{
+      width: 100%;
+      align-items: center;
+    }
+    &_timetable{
+      display: flex;
+      flex-direction: column;
+      padding-left: 5%;
+      width: 100%;
+      align-items: start;
+    }
+  }
+
+  a{
+    text-decoration: none;
+  }
+  .navbar-account{
+    position: absolute;
+    right: 5.5%;
+    top: 26%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .navbar-cart{
+    display: flex;
+    align-items: end;
+    margin-top: 5px;
+    margin-right: 3em;
+    border-style: none;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+
+    .count{
+      border-radius: 10px;
+      border: black solid 1px;
+      padding: 1px 5px;
+      color: $backColor;
+      background-color: black;
+      position: absolute;
+      left: 59%;
+      top: 55%;
+    }
+
+    &_icon{
+      cursor: pointer;
+      display: flex;
+
+      span{
+        @include text;
+        margin: 2px 0 0 2px;
+      }
+
+    }
+    svg:hover, :active {
+      //box-shadow: 0 0 6px 3px gray;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.productChoice {
+  // width: 70%;
+  margin: 0 auto 5%;
+  .productChoice-container {
+    //
+    padding-top: 4%;
+    //
+    display: flex;
+    width: 100%;
+    .productChoice-img{
+      width: 50%;
+      img{
+        width: 100%;
+      }
+    }
+
+    .productChoice-descr{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      &_title{
+        @include title;
+        font-family: $FontMedium;
+      }
+
+      &_selector{
+        @include selector;
+        width: 55%;
+        margin: 7% 0;
+      }
+      &_price{
+        @include title;
+        font-family: $FontMedium;
+      }
+
+      &_btn{
+        @include btnCart;
+        font-family: $FontMedium;
+        margin-top: 3%;
+        padding: 3% 18%;
+      }
+    }
+  }
+}

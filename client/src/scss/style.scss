@@ -1,0 +1,37 @@
+@import "fonts";
+@import "./constants.scss";
+@import "./mixin.scss";
+
+//navbar
+@import "./navbar.scss";
+@import "./authorization.scss";
+
+//chatbot
+@import "./btnChat.scss";
+
+//footer
+@import "./footer.scss";
+
+//main page
+@import "./content.scss";
+@import "./sneakersBlock.scss";
+
+//cart page
+@import "./cart.scss";
+
+//emptyCart
+@import "./empty.scss";
+
+//product card
+@import "./productChoice.scss";
+@import "./productDescr.scss";
+
+//payment
+@import "./payment";
+
+@import "./registration";
+@import "./inputForm";
+
+body {
+  margin: 0;
+}
